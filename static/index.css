@@ -1,0 +1,7 @@
+.table {
+	width: 1200px;
+	margin: 40px;
+}
+.link-queued td {
+	background: rgba(0, 255, 0, 0.4);
+}

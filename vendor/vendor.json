@@ -1,0 +1,109 @@
+{
+	"comment": "",
+	"ignore": "",
+	"package": [
+		{
+			"checksumSHA1": "oAQ2UvVBSjlIDXWd8YMdQsgvviA=",
+			"path": "github.com/SlyMarbo/rss",
+			"revision": "efe2d68d7d91f933df138508e0ee6e1f0655493d",
+			"revisionTime": "2016-11-20T00:12:24Z"
+		},
+		{
+			"checksumSHA1": "xcEkcnQ9KIiXzdfQ7q5GqOJqF5E=",
+			"path": "github.com/alexflint/go-arg",
+			"revision": "03900620e2d015e9573ac7a20e71ed091a308ba0",
+			"revisionTime": "2016-10-10T00:22:42Z"
+		},
+		{
+			"checksumSHA1": "2kPzJ4vR+HUBoNReI77dpsY7YIQ=",
+			"path": "github.com/axgle/mahonia",
+			"revision": "c528b747d92d41ca581a7acf3e604c396fc7c034",
+			"revisionTime": "2015-10-19T00:40:08Z"
+		},
+		{
+			"checksumSHA1": "jhnmDvZBr3YImYOCzQl+yx1uygA=",
+			"path": "github.com/codegangsta/negroni",
+			"revision": "1dd3ab0ff59e13f5b73dcbf70703710aebe50d2f",
+			"revisionTime": "2014-12-14T23:15:41Z"
+		},
+		{
+			"checksumSHA1": "6aiEcTXDNtE1WMPW1kCRoFgaUZc=",
+			"path": "github.com/go-sql-driver/mysql",
+			"revision": "9543750295406ef070f7de8ae9c43ccddd44e15e",
+			"revisionTime": "2014-09-26T19:08:41Z"
+		},
+		{
+			"checksumSHA1": "uPDG3ba6TMiWIkZqHv8ArmxL6r0=",
+			"path": "github.com/lib/pq",
+			"revision": "72d960fe96ac86dfd376b0de7ca81c0334838d0b",
+			"revisionTime": "2015-02-19T18:49:13Z"
+		},
+		{
+			"checksumSHA1": "xppHi82MLqVx1eyQmbhTesAEjx8=",
+			"path": "github.com/lib/pq/oid",
+			"revision": "72d960fe96ac86dfd376b0de7ca81c0334838d0b",
+			"revisionTime": "2015-02-19T18:49:13Z"
+		},
+		{
+			"checksumSHA1": "vWWIVr7K/PxGjQ91MNlJot7i0gM=",
+			"path": "github.com/mattn/go-sqlite3",
+			"revision": "c5aee9649735e8dadac55eb968ccebd9fa29a881",
+			"revisionTime": "2016-02-01T05:34:37Z"
+		},
+		{
+			"checksumSHA1": "vUcHzx0aV5Vid+r3FyGE1Y7QkHs=",
+			"path": "github.com/mattn/go-sqlite3/sqlite3_test",
+			"revision": "c5aee9649735e8dadac55eb968ccebd9fa29a881",
+			"revisionTime": "2016-02-01T05:34:37Z"
+		},
+		{
+			"checksumSHA1": "3EzAwVV62B5am2zjqKQGy/3O0z0=",
+			"path": "github.com/stretchr/testify/assert",
+			"revision": "efa3c4c36479edac5af79cbcb4bc8cb525e09b13",
+			"revisionTime": "2015-02-11T01:53:42Z"
+		},
+		{
+			"checksumSHA1": "Rsad9u1dujna9pCllzaIYStICDw=",
+			"path": "github.com/stretchr/testify/require",
+			"revision": "efa3c4c36479edac5af79cbcb4bc8cb525e09b13",
+			"revisionTime": "2015-02-11T01:53:42Z"
+		},
+		{
+			"checksumSHA1": "K87qhGoYTfTOAuOFlqqxmEU3wKk=",
+			"path": "github.com/ziutek/mymysql/godrv",
+			"revision": "1294234e9635d40b24107b0ab0e980add015f4b5",
+			"revisionTime": "2015-05-04T14:11:06Z"
+		},
+		{
+			"checksumSHA1": "OK7pGfHEoaZ+ndcBQdQDaSIoD/0=",
+			"path": "github.com/ziutek/mymysql/mysql",
+			"revision": "1294234e9635d40b24107b0ab0e980add015f4b5",
+			"revisionTime": "2015-05-04T14:11:06Z"
+		},
+		{
+			"checksumSHA1": "ZPGncE+gsji+Szuzflnf+RuwLiI=",
+			"path": "github.com/ziutek/mymysql/native",
+			"revision": "1294234e9635d40b24107b0ab0e980add015f4b5",
+			"revisionTime": "2015-05-04T14:11:06Z"
+		},
+		{
+			"checksumSHA1": "mrgKFFghDmwwQCeBDKWvzPspL/Y=",
+			"path": "golang.org/x/net/html",
+			"revision": "59b0df9b1f7abda5aab0495ee54f408daf182ce7",
+			"revisionTime": "2015-02-10T23:40:36Z"
+		},
+		{
+			"checksumSHA1": "B1w3qW66X0PJPWCT039WRiZPr5Y=",
+			"path": "golang.org/x/net/html/atom",
+			"revision": "59b0df9b1f7abda5aab0495ee54f408daf182ce7",
+			"revisionTime": "2015-02-10T23:40:36Z"
+		},
+		{
+			"checksumSHA1": "f1z0dCkGzUUHunwrLaoZGXbmudw=",
+			"path": "gopkg.in/gorp.v1",
+			"revision": "c87af80f3cc5036b55b83d77171e156791085e2e",
+			"revisionTime": "2015-02-04T08:55:30Z"
+		}
+	],
+	"rootPath": "github.com/alexflint/bufferlinks"
+}

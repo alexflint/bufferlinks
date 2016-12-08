@@ -1,0 +1,39 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+.form-enqueue {
+  max-width: 600px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-enqueue .form-enqueue-heading,
+.form-enqueue .checkbox {
+  margin-bottom: 10px;
+}
+.form-enqueue .checkbox {
+  font-weight: normal;
+}
+.form-enqueue .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-enqueue .form-control:focus {
+  z-index: 2;
+}
+.form-enqueue input {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+}
+.form-enqueue textarea {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  min-height: 400px;
+}

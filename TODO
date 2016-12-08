@@ -1,0 +1,7 @@
+TODO
+
+put everything in bindata
+serve static assets from bindata
+build docker image
+deploy somewhere
+push to github?

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buffer Links</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/static/index.css"></link>
+  </head>
+  <body>
+
+    <div class="table">
+      <table class="table table-striped">
+        <tbody>
+          {{range $article := .Articles}}
+            <tr>
+              <td colspan="2">
+                <strong><a href="{{$article.URL}}">{{$article.Title}}</a> ({{$article.Feed}})</strong>
+              </td>
+              <td>
+                <a href="/done?article={{$article.ID}}">Done</a>
+              </td>
+            </tr>
+            {{range $link := $article.Links}}
+              <tr class="{{if $link.Queued}}link-queued{{end}}">
+                <td>{{$link.Context}}</td>
+                <td><a href="{{$link.URL}}">{{$link.Domain}}</a></td>
+                <td><a href="/enqueue?url={{$link.URL}}">Enqueue</a></td>
+              </tr>
+            {{end}}
+          {{end}}
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
