@@ -2,6 +2,8 @@
 // sources:
 // templates/enqueue.html
 // templates/index.html
+// static/enqueue.css
+// static/index.css
 // DO NOT EDIT!
 
 package main
@@ -84,7 +86,7 @@ func templatesEnqueueHtml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/enqueue.html", size: 1336, mode: os.FileMode(420), modTime: time.Unix(1481171905, 0)}
+	info := bindataFileInfo{name: "templates/enqueue.html", size: 1336, mode: os.FileMode(420), modTime: time.Unix(1481821274, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -104,7 +106,47 @@ func templatesIndexHtml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/index.html", size: 1699, mode: os.FileMode(420), modTime: time.Unix(1481176470, 0)}
+	info := bindataFileInfo{name: "templates/index.html", size: 1699, mode: os.FileMode(420), modTime: time.Unix(1481821274, 0)}
+	a := &asset{bytes: bytes, info: info}
+	return a, nil
+}
+
+var _staticEnqueueCss = []byte("\x1f\x8b\x08\x00\x00\x09\x6e\x88\x00\xff\x74\x92\xd1\x6e\xb3\x30\x0c\x85\xef\x79\x0a\x4b\xbf\xfe\xbb\x65\x82\xa9\xeb\x45\xfa\x34\x09\x71\xc1\x2a\xc4\x2c\x98\x35\xeb\xb4\x77\x9f\x92\xd2\xb5\xb4\x85\x3b\x8e\xec\xcf\xc7\xc7\xb1\xec\xbe\xe0\xbb\x00\x18\x8c\x73\xe4\x1b\x25\x3c\x68\xd8\x94\x43\xdc\xdd\x88\x96\x45\xb8\xbf\xea\xd6\xd4\x87\x26\xf0\xe4\x9d\xaa\xb9\xe3\xa0\xe1\x1f\x22\xee\x8a\x9f\xa2\x78\xdd\x73\xe8\x15\xfa\x8f\x09\x27\xcc\xe4\xde\x44\x75\x24\x27\xad\x86\x6d\xb9\x04\x6b\xa8\xde\xcf\x42\x6f\x42\x43\x5e\x43\x09\x66\x12\x4e\xa4\x25\x68\xf1\xa7\x5a\x34\xa9\xfd\xe5\xbe\xa8\x6e\xb1\x3e\x58\x8e\xf3\xdc\x84\xfc\xf3\x5e\xe5\xd1\x0f\xdc\x45\xcb\x9e\xbd\xa8\x23\x52\xd3\x8a\x06\xcf\xa1\x37\xdd\x9a\x95\x9a\xbd\x04\xee\xce\xd9\xf1\x48\x42\xec\x35\x04\xec\x8c\xd0\x27\xa6\x95\xda\x99\x73\x5e\x08\x40\x1d\xd1\x1e\x48\x94\xe5\xa8\x46\x3a\xe5\xf5\x2d\x07\x87\x21\x49\xa9\xe2\xf2\xad\x57\x5c\x73\x9b\x83\xcc\x8e\x47\x3a\xa1\x86\x6a\xfb\x74\xc1\x5b\xb7\x7a\xcf\xf5\x34\x66\xcf\x27\x45\xde\x61\xd4\xf0\xf6\xd8\x43\x7e\x98\x64\x3d\x43\x80\xf9\x9c\x55\x59\xfe\x7f\xe2\xea\x1e\x27\x18\xc5\x04\x34\xb7\xc4\xfc\xcc\x96\xc7\xbf\x4e\xb9\xc8\xe4\xd5\x25\xc4\x4d\x39\xa3\x7f\x03\x00\x00\xff\xff\x7d\x6f\xee\xd5\xb1\x02\x00\x00")
+
+func staticEnqueueCssBytes() ([]byte, error) {
+	return bindataRead(
+		_staticEnqueueCss,
+		"static/enqueue.css",
+	)
+}
+
+func staticEnqueueCss() (*asset, error) {
+	bytes, err := staticEnqueueCssBytes()
+	if err != nil {
+		return nil, err
+	}
+
+	info := bindataFileInfo{name: "static/enqueue.css", size: 689, mode: os.FileMode(420), modTime: time.Unix(1481821274, 0)}
+	a := &asset{bytes: bytes, info: info}
+	return a, nil
+}
+
+var _staticIndexCss = []byte("\x1f\x8b\x08\x00\x00\x09\x6e\x88\x00\xff\xd2\x2b\x49\x4c\xca\x49\x55\xa8\xe6\xe2\x2c\xcf\x4c\x29\xc9\xb0\x52\x30\x34\x32\x30\x28\xa8\xb0\xe6\xe2\xcc\x4d\x2c\x4a\xcf\xcc\xb3\x52\x30\x01\x73\x6b\xb9\xf4\x72\x32\xf3\xb2\x75\x0b\x4b\x53\x4b\x53\x53\x14\x4a\x52\x40\x5a\x92\x12\x93\xb3\xd3\x8b\xf2\x4b\xf3\x52\xac\x14\x8a\xd2\x93\x12\x35\x0c\x74\x14\x8c\x4c\x4d\x75\x14\x0c\x74\x14\x0c\xf4\x4c\x34\x41\xda\x00\x01\x00\x00\xff\xff\x2b\x12\xdc\x91\x61\x00\x00\x00")
+
+func staticIndexCssBytes() ([]byte, error) {
+	return bindataRead(
+		_staticIndexCss,
+		"static/index.css",
+	)
+}
+
+func staticIndexCss() (*asset, error) {
+	bytes, err := staticIndexCssBytes()
+	if err != nil {
+		return nil, err
+	}
+
+	info := bindataFileInfo{name: "static/index.css", size: 97, mode: os.FileMode(420), modTime: time.Unix(1481821274, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -163,6 +205,8 @@ func AssetNames() []string {
 var _bindata = map[string]func() (*asset, error){
 	"templates/enqueue.html": templatesEnqueueHtml,
 	"templates/index.html": templatesIndexHtml,
+	"static/enqueue.css": staticEnqueueCss,
+	"static/index.css": staticIndexCss,
 }
 
 // AssetDir returns the file names below a certain
@@ -205,6 +249,10 @@ type bintree struct {
 	Children map[string]*bintree
 }
 var _bintree = &bintree{nil, map[string]*bintree{
+	"static": &bintree{nil, map[string]*bintree{
+		"enqueue.css": &bintree{staticEnqueueCss, map[string]*bintree{}},
+		"index.css": &bintree{staticIndexCss, map[string]*bintree{}},
+	}},
 	"templates": &bintree{nil, map[string]*bintree{
 		"enqueue.html": &bintree{templatesEnqueueHtml, map[string]*bintree{}},
 		"index.html": &bintree{templatesIndexHtml, map[string]*bintree{}},

@@ -1,4 +1,4 @@
-//go:generate go-bindata -o bindata.go templates/...
+//go:generate go-bindata -o bindata.go templates/... static/...
 
 package main
 
@@ -265,10 +265,10 @@ func main() {
 	if args.Debug {
 		static = http.Dir("static")
 	} else {
-		static = &assetfs.AssetFS{Asset: Asset, AssetDir: AssetDir}
+		static = &assetfs.AssetFS{Asset: Asset, AssetDir: AssetDir, AssetInfo: AssetInfo}
 	}
 
-	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(static)))
+	http.Handle("/static/", http.FileServer(static))
 	http.HandleFunc("/enqueue", app.handleEnqueue)
 	http.HandleFunc("/commit", app.handleCommit)
 	http.HandleFunc("/", app.handleIndex)
