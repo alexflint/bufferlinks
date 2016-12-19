@@ -9,12 +9,19 @@ import (
 )
 
 const (
-	URL = "https://api.bufferapp.com/1"
+	BufferURL = "https://api.bufferapp.com/1"
 )
 
 type Client struct {
-	AccessToken string
-	Url         string
+	accessToken string
+	http        *http.Client
+}
+
+func NewClient(accessToken string, http *http.Client) *Client {
+	return &Client{
+		accessToken: accessToken,
+		http:        http,
+	}
 }
 
 type Update struct {
@@ -101,8 +108,8 @@ func (c *Client) CreateUpdate(profileIds []string, opts UpdateOptions) ([]Update
 }
 
 func (c *Client) get(resource string) ([]byte, error) {
-	urlEndpoint := c.Url + "/" + resource + ".json?access_token=" + c.AccessToken
-	resp, err := http.Get(urlEndpoint)
+	urlEndpoint := BufferURL + "/" + resource + ".json?access_token=" + c.accessToken
+	resp, err := c.http.Get(urlEndpoint)
 	if err != nil {
 		return nil, err
 	}
@@ -115,8 +122,8 @@ func (c *Client) get(resource string) ([]byte, error) {
 }
 
 func (c *Client) post(resource string, params url.Values) ([]byte, error) {
-	urlEndpoint := c.Url + "/" + resource + ".json?access_token=" + c.AccessToken
-	resp, err := http.PostForm(urlEndpoint, params)
+	urlEndpoint := BufferURL + "/" + resource + ".json?access_token=" + c.accessToken
+	resp, err := c.http.PostForm(urlEndpoint, params)
 	if err != nil {
 		return nil, err
 	}
@@ -126,8 +133,4 @@ func (c *Client) post(resource string, params url.Values) ([]byte, error) {
 		return nil, fmt.Errorf("buffer API said: %s", resp.Status)
 	}
 	return ioutil.ReadAll(resp.Body)
-}
-
-func NewClient(accessToken string) *Client {
-	return &Client{Url: URL, AccessToken: accessToken}
 }

@@ -15,6 +15,7 @@ import (
 
 	"github.com/alexflint/bufferlinks/buffer"
 	arg "github.com/alexflint/go-arg"
+	"github.com/alexflint/stdroots"
 	"github.com/codegangsta/negroni"
 	assetfs "github.com/elazarl/go-bindata-assetfs"
 )
@@ -231,7 +232,7 @@ func main() {
 	}
 
 	// Connect to Buffer
-	client := buffer.NewClient(buffertok[2 : len(buffertok)-2])
+	client := buffer.NewClient(buffertok[2:len(buffertok)-2], stdroots.Client)
 	profiles, err := client.Profiles()
 	if err != nil {
 		log.Fatal("error getting profiles: ", err)
